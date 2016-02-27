@@ -14,6 +14,9 @@ end
 function love.draw()
   love.graphics.setCanvas(canvas)
   love.graphics.clear(0, 0, 0)
+  -- draw "the ground"
+  love.graphics.setColor(50, 200, 50)
+  love.graphics.rectangle('fill', 0, 200, width, height - 200)
   action:draw()
 
   love.graphics.setCanvas()
